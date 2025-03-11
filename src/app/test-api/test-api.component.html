@@ -1,0 +1,13 @@
+<div class="buckets" style="text-align: center">
+  <h2>Danh sách Objects theo từng Bucket</h2>
+  <div *ngFor="let bucket of buckets">
+    <h3>{{ bucket.name }}</h3>
+    <ul>
+      <li *ngFor="let obj of objectsMap[bucket.name]">
+        {{ obj.name }} - {{ obj.last_modified }}
+      </li>
+    </ul>
+  </div>
+</div>
+
+

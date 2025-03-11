@@ -1,0 +1,12 @@
+
+<div class="home">
+  <section class="findings">
+    <input #searchInput name="searchTerm" [(ngModel)]="searchTerm" placeholder="Search s3 object . . ." autofocus/>
+  </section>
+
+  <section class="results">
+    <app-bucket-object [buckets]="bucketList" [bucObjs]="bucketObjectList" [search]="searchTerm"></app-bucket-object>
+  </section>
+</div>
+
+
