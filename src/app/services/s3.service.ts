@@ -12,7 +12,7 @@ import {S3Object} from '../interface/S3Object';
 export class S3Service {
   private apiUrlLocal = 'http://127.0.0.1:5000';
   private apiUrlVercel = 'https://interdata-cli-api.vercel.app';
-  private apiUrlVPS = 'http://103.20.96.236';
+  private apiUrlVPS = 'https://api.dinhgiabao.io.vn';
   //Phiên bản Angular 14 trở về trước:  constructor( private http: HttpClient ) { }
   http = inject(HttpClient);
 
